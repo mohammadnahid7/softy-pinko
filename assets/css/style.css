@@ -23,6 +23,13 @@ strong {
   font-weight: 700;
 }
 
+hr {
+  height: 1px;
+  background-color: #eeeeee;
+  width: 100%;
+  border: 0;
+}
+
 * {
   box-sizing: border-box;
   letter-spacing: 0.0625rem;
@@ -249,7 +256,7 @@ strong {
 }
 @media (min-width: 48rem) {
   .features {
-    padding: 0;
+    padding-bottom: 0;
   }
 }
 .features .row {
@@ -260,7 +267,7 @@ strong {
 }
 @media (min-width: 62rem) {
   .features .row {
-    bottom: 0;
+    bottom: 100%;
     height: auto;
     position: absolute;
     transform: translateY(25%);
@@ -318,6 +325,78 @@ strong {
   color: #777;
   font-size: 0.8125rem;
   font-weight: 400;
+}
+
+.about .row,
+.help .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.about .row figure,
+.help .row figure {
+  width: calc(100% - 1.875rem);
+  margin-left: 0.9375rem;
+  margin-right: 0.9375rem;
+  text-align: center;
+}
+@media (min-width: 62rem) {
+  .about .row figure,
+  .help .row figure {
+    width: calc(41.6666666667% - 1.875rem);
+    margin-left: 0.9375rem;
+    margin-right: 0.9375rem;
+  }
+}
+.about .row .about__body,
+.about .row .help__body,
+.help .row .about__body,
+.help .row .help__body {
+  margin: 2.5rem auto auto auto;
+  width: calc(100% - 1.875rem);
+  margin-left: 0.9375rem;
+  margin-right: 0.9375rem;
+  text-align: center;
+}
+@media (min-width: 62rem) {
+  .about .row .about__body,
+  .about .row .help__body,
+  .help .row .about__body,
+  .help .row .help__body {
+    text-align: left;
+    width: calc(50% - 1.875rem);
+    margin-left: 0.9375rem;
+    margin-right: 0.9375rem;
+  }
+}
+.about .row .about__body .about__body-title,
+.about .row .about__body .help__body-title,
+.about .row .help__body .about__body-title,
+.about .row .help__body .help__body-title,
+.help .row .about__body .about__body-title,
+.help .row .about__body .help__body-title,
+.help .row .help__body .about__body-title,
+.help .row .help__body .help__body-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1.875rem;
+}
+.about .row .about__body .about__body-text,
+.about .row .about__body .help__body-text,
+.about .row .help__body .about__body-text,
+.about .row .help__body .help__body-text,
+.help .row .about__body .about__body-text,
+.help .row .about__body .help__body-text,
+.help .row .help__body .about__body-text,
+.help .row .help__body .help__body-text {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #777;
+}
+
+.help .row {
+  flex-direction: row-reverse;
 }
 
 /* Font
