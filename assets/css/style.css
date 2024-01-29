@@ -560,6 +560,88 @@ hr {
   color: #ff589e;
 }
 
+.pricing {
+  background-color: #f2f2fe;
+}
+.pricing .row {
+  flex-direction: row;
+}
+.pricing .row .section-info .section-info__title {
+  color: #1e1e1e;
+}
+.pricing .row .section-info .section-info__text {
+  color: #777;
+}
+.pricing .row .price-plan {
+  background-color: white;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  margin-bottom: 0.9375rem;
+  margin-top: 0.9375rem;
+  padding: 2.1875rem;
+  width: calc(100% - 1.875rem);
+  margin-left: 0.9375rem;
+  margin-right: 0.9375rem;
+}
+@media (min-width: 48rem) {
+  .pricing .row .price-plan {
+    width: calc(50% - 1.875rem);
+    margin-left: 0.9375rem;
+    margin-right: 0.9375rem;
+  }
+}
+@media (min-width: 62rem) {
+  .pricing .row .price-plan {
+    width: calc(33.3333333333% - 1.875rem);
+    margin-left: 0.9375rem;
+    margin-right: 0.9375rem;
+  }
+}
+.pricing .row .price-plan .plan__title {
+  font-size: 1.0625rem;
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+}
+.pricing .row .price-plan .plan-price__body {
+  background-color: #8261ee;
+  border-radius: 1.25rem;
+  color: white;
+  margin-bottom: 2.5rem;
+  padding: 0.9375rem 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.pricing .row .price-plan .plan-price__body .plan-price__price {
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+.pricing .row .price-plan .plan-price__body .plan-price__period {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.pricing .row .price-plan .plan-price__features {
+  margin-bottom: 3.125rem;
+}
+.pricing .row .price-plan .plan-price__features li {
+  font-size: 0.8125rem;
+  margin-bottom: 0.75rem;
+}
+.pricing .row .price-plan .button {
+  background-color: #8261ee;
+}
+.pricing .row .price-plan .button:hover {
+  background-color: #ff589e;
+}
+.pricing .row .premium .plan-price__body {
+  background-color: #ff589e;
+}
+.pricing .row .premium .button {
+  background-color: #ff589e;
+}
+.pricing .row .premium .button:hover {
+  background-color: #8261ee;
+}
+
 /* Font
     13
     14
