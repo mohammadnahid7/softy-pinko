@@ -97,6 +97,7 @@ hr {
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
   display: block;
   text-align: center;
+  height: 100%;
 }
 
 .section-info {
@@ -452,13 +453,6 @@ hr {
 }
 @media (min-width: 48rem) {
   .process .row .step {
-    width: calc(50% - 1.875rem);
-    margin-left: 0.9375rem;
-    margin-right: 0.9375rem;
-  }
-}
-@media (min-width: 48rem) {
-  .process .row .step {
     width: calc(25% - 1.875rem);
     margin-left: 0.9375rem;
     margin-right: 0.9375rem;
@@ -493,6 +487,77 @@ hr {
   color: #1e1e1e;
   font-size: 0.875rem;
   font-weight: 400;
+}
+
+.testimonials .row {
+  flex-direction: row;
+}
+.testimonials .row .section-info .section-info__title {
+  color: #1e1e1e;
+}
+.testimonials .row .section-info .section-info__text {
+  color: #777;
+}
+.testimonials .row .testimonial {
+  background-color: white;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  margin-bottom: 0.9375rem;
+  margin-top: 0.9375rem;
+  padding: 1.25rem;
+  position: relative;
+  z-index: 0;
+  width: calc(100% - 1.875rem);
+  margin-left: 0.9375rem;
+  margin-right: 0.9375rem;
+}
+@media (min-width: 48rem) {
+  .testimonials .row .testimonial {
+    width: calc(50% - 1.875rem);
+    margin-left: 0.9375rem;
+    margin-right: 0.9375rem;
+  }
+}
+@media (min-width: 62rem) {
+  .testimonials .row .testimonial {
+    width: calc(33.3333333333% - 1.875rem);
+    margin-left: 0.9375rem;
+    margin-right: 0.9375rem;
+  }
+}
+.testimonials .row .testimonial .testimonial-text {
+  text-align: left;
+  color: #777;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  margin-bottom: 1.5625rem;
+  margin-top: 1.5625rem;
+}
+.testimonials .row .testimonial .testimonial-user__body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.testimonials .row .testimonial .testimonial-user__body .testimonial-user__photo {
+  border-radius: 3.75rem;
+}
+.testimonials .row .testimonial .testimonial-user__body .testimonial-user__info {
+  margin: 0 1.25rem;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.testimonials .row .testimonial .testimonial-user__body .testimonial-user__info .testimonial-user__name {
+  font-size: 1.0625rem;
+  font-weight: 400;
+  color: #1e1e1e;
+}
+.testimonials .row .testimonial .testimonial-user__body .testimonial-user__info .testimonial-user__role {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: #ff589e;
 }
 
 /* Font
